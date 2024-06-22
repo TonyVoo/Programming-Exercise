@@ -1,0 +1,213 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .Bestsellers-section,
+  .TopBrand-section,
+  .Promotion-section {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .section {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-pic {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+  
+  .product-info {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .price_discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .product-price {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+  }
+  
+  .ori-price {
+    font-size: 12px;
+    color: red;
+    text-decoration: line-through;
+  }
+  
+  .sale-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+    margin-top: -5px;
+  }
+  
+  .discount {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding: 2px 5px;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 10px; /* Adjust margin as per your design */
+  }
+  
+  .add-button,
+  .quantity-control {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff9900;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .product-container:hover .add-button {
+    display: block;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-control button {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .quantity-control span {
+    margin: 0 10px;
+  }
+  
+  .show-more {
+    display: flex;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .show-more .arrow {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .items,
+  .customer {
+    width: 48%;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .cart-item p {
+    margin: 0;
+  }
+  
+  .quantity-control button {
+    background-color: #ff9900;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .quantity-control span {
+    margin: 0 10px;
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

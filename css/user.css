@@ -1,0 +1,122 @@
+/* user.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .user-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .user-profile, .order-history {
+    margin-bottom: 40px;
+  }
+  
+  .user-profile h2, .order-history h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info, .order-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .profile-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .profile-info input, .profile-info textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .profile-info button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .profile-info button:hover {
+    background-color: #555;
+  }
+  
+  .order-item {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .order-item p {
+    margin: 5px 0;
+  }
+  
+  .order-item .view-order {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .order-item .view-order:hover {
+    background-color: #555;
+  }
+  

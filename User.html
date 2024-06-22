@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - Awazon</title>
+  <link rel="stylesheet" href="css/user.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1><a href="HomePage.html">Awazon</a></h1>
+      <nav>
+        <ul>
+          <li><a href="user.html">My Account</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="user-dashboard">
+    <section class="user-profile">
+      <h2>Welcome, [Username]</h2>
+      <div class="profile-info">
+        <h3>Personal Information</h3>
+        <form id="profile-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="John Doe" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="johndoe@example.com" required>
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="4" required>123 Main St, City, Country</textarea>
+          <button type="submit">Update Profile</button>
+        </form>
+      </div>
+    </section>
+    <section class="order-history">
+      <h2>Order History</h2>
+      <div class="order-list">
+        <div class="order-item">
+          <p><strong>Order ID:</strong> 123456</p>
+          <p><strong>Date:</strong> January 1, 2024</p>
+          <p><strong>Total:</strong> $100.00</p>
+          <button class="view-order">View Details</button>
+        </div>
+        <!-- Repeat order-item for each order -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About us</h3>
+        <p>Official commercial page of Elon Musk - CEO. Always looking for products for customers.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact us</h3>
+        <p>VD 4, Thới Hòa, Bến Cát, Bình Dương 75000</p>
+        <p>0274 2220 990</p>
+        <p>awazonshop@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Transaction Service</a></li>
+          <li><a href="#">Take our feedback survey</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Shopping with us</h3>
+        <ul>
+          <li><a href="#">Making payments</a></li>
+          <li><a href="#">Delivery options</a></li>
+          <li><a href="#">Buyer options</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Awazon. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

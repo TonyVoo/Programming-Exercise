@@ -1,0 +1,153 @@
+/* admin.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .admin-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .overview {
+    margin-bottom: 40px;
+  }
+  
+  .overview h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .overview-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .manage-products, .manage-orders, .manage-users {
+    margin-bottom: 40px;
+  }
+  
+  .manage-products h2, .manage-orders h2, .manage-users h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .product-list, .order-list, .user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-item, .order-item, .user-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info, .user-item {
+    margin-bottom: 10px;
+  }
+  
+  .product-info h3, .user-item h3 {
+    margin-top: 0;
+  }
+  
+  .product-info p, .user-item p {
+    margin-bottom: 5px;
+  }
+  
+  .product-info button, .user-item button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .product-info button:hover, .user-item button:hover {
+    background-color: #555;
+  }
+  
+  .order-item {
+    margin-bottom: 10px;
+  }
+  
+  .order-item p {
+    margin: 5px 0;
+  }
+  
+  .order-item .view-order {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .order-item .view-order:hover {
+    background-color: #555;
+  }
+  

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Awazon</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1><a href="HomePage.html">Awazon - Admin</a></h1>
+      <nav>
+        <ul>
+          <li><a href="admin.html">Dashboard</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="admin-dashboard">
+    <section class="overview">
+      <h2>Overview</h2>
+      <div class="overview-cards">
+        <div class="card">
+          <h3>Total Products</h3>
+          <p>50</p>
+        </div>
+        <div class="card">
+          <h3>Total Orders</h3>
+          <p>100</p>
+        </div>
+        <div class="card">
+          <h3>Total Users</h3>
+          <p>500</p>
+        </div>
+      </div>
+    </section>
+    <section class="manage-products">
+      <h2>Manage Products</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <img src="product-picture/product1.jpg" alt="Product 1">
+          <div class="product-info">
+            <h3>Product Name</h3>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Price: $100.00</p>
+            <button class="edit-product">Edit</button>
+            <button class="delete-product">Delete</button>
+          </div>
+        </div>
+        <!-- Repeat product-item for each product -->
+      </div>
+    </section>
+    <section class="manage-orders">
+      <h2>Manage Orders</h2>
+      <div class="order-list">
+        <div class="order-item">
+          <p><strong>Order ID:</strong> 123456</p>
+          <p><strong>Date:</strong> January 1, 2024</p>
+          <p><strong>Total:</strong> $100.00</p>
+          <button class="view-order">View Details</button>
+        </div>
+        <!-- Repeat order-item for each order -->
+      </div>
+    </section>
+    <section class="manage-users">
+      <h2>Manage Users</h2>
+      <div class="user-list">
+        <div class="user-item">
+          <h3>User Name</h3>
+          <p>Email: user@example.com</p>
+          <p>Address: 123 Main St, City, Country</p>
+          <button class="edit-user">Edit</button>
+          <button class="delete-user">Delete</button>
+        </div>
+        <!-- Repeat user-item for each user -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About us</h3>
+        <p>Official commercial page of Elon Musk - CEO. Always looking for products for customers.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact us</h3>
+        <p>VD 4, Thới Hòa, Bến Cát, Bình Dương 75000</p>
+        <p>0274 2220 990</p>
+        <p>awazonshop@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Transaction Service</a></li>
+          <li><a href="#">Take our feedback survey</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Shopping with us</h3>
+        <ul>
+          <li><a href="#">Making payments</a></li>
+          <li><a href="#">Delivery options</a></li>
+          <li><a href="#">Buyer options</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Awazon. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
