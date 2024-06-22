@@ -1,0 +1,147 @@
+/* header.css */
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.logo {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  flex-grow: 1;
+  margin: 0 20px;
+  max-width: 500px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.search-bar button {
+  background-color: #fdfdfd;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  height: 30px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+
+.user-section img {
+  height: 37px;
+  margin-right: 10px;
+}
+
+.user-info .welcome {
+  font-size: 18px;
+  margin: 0;
+}
+
+.user-info .sign-in-up a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.user-info .sign-in-up .divider {
+  margin: 0 5px;
+}
+
+.cart-section img {
+  height: 37px;
+  margin-right: 80px;
+}
+
+/* Tooltip container */
+.logo-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Tooltip container */
+.logo-tooltip,
+.search-bar-tooltip,
+.user-actions-tooltip,
+.cart-section-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Tooltip text */
+.tooltip-text {
+  visibility: hidden;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px; /* Adjust font size */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Show tooltip on hover */
+.logo-tooltip:hover .tooltip-text,
+.search-bar-tooltip:hover .tooltip-text,
+.user-actions-tooltip:hover .tooltip-text,
+.cart-section-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Arrow */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+

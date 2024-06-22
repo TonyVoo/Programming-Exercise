@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Awazon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/promotion.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo logo-tooltip">
+                Awazon
+                <span class="tooltip-text">Visit Awazon Home</span>
+            </h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">
+                    <img src="icon/search.png" alt="Search">
+                </button>
+                <span class="tooltip-text">Search Products</span>
+            </div>
+            <div class="user-actions">
+                <div class="user-section">
+                    <img src="icon/user.png" alt="User">
+                    <div class="user-info">
+                        <p class="welcome">Welcome</p>
+                        <div class="sign-in-up">
+                            <a href="Sign_in.html">Sign in</a>
+                            <span class="divider">|</span>
+                            <a href="Sign_up.html">Sign up</a>
+                        </div>
+                    </div>
+                    <span class="tooltip-text">Account Actions</span>
+                </div>
+                <a href="Cart.html" class="cart-section">
+                    <img src="icon/cart.png" alt="Cart">
+                    <span class="tooltip-text">View Cart</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="nav-container">
+        <nav>
+            <div class="dropdown">
+                <button class="categories-button">All Categories <span class="arrow-icon"></span></button>
+                <div class="dropdown-content">
+                    <a href="#">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#Bestsellers-section">Bestsellers</a></li>
+                <li><a href="#TopBrand-section">Top Brand</a></li>
+                <li><a href="#Promotion-section">Promotion</a></li>
+                <li><a href="#Blog-section">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="promotion-container" id="Promotion-section">
+        <a href="#" class="promotion-link">
+            <img class="promotion-pic" src="promotion-image.jpg" alt="Promotion Image">
+            <div class="promotion-text">
+                <p>PC Components</p>
+                <p>UP TO 75% OFF</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="Bestsellers-section" id="Bestsellers-section">
+        <p class="section">Bestsellers</p>
+        <div class="product-listings">
+            <div class="product">
+                <div class="product-container">
+                    <img class="product-pic" src="product-picture/pic1.png" alt="Product Image">
+                    <div class="product-info">
+                        <p class="product-name">GAMING PC - RTX 4060 Pro Art - 12400F</p>
+                        <div class="price_discount">
+                            <div class="product-price">
+                                <p class="ori-price">21.990.000đ</p>
+                                <p class="sale-price">18.620.000đ</p>
+                            </div>
+                            <div class="discount">-17%</div>
+                        </div>
+                    </div>
+                    <button class="add-button" onclick="showQuantityControl(this)">Add to Cart</button>
+                    <div class="quantity-control" style="display: none;">
+                        <button onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="show-more">
+            Show more <span class="arrow">&#9660;</span>
+        </button>
+    </div>
+
+    <div class="TopBrand-section" id="TopBrand-section">
+        <p class="section">Top Brand</p>
+        <div class="product-listings">
+            <div class="product">
+                <div class="product-container">
+                    <img class="product-pic" src="product-picture/pic1.png" alt="Product Image">
+                    <div class="product-info">
+                        <p class="product-name">GAMING PC - RTX 4060 Pro Art - 12400F</p>
+                        <div class="price_discount">
+                            <div class="product-price">
+                                <p class="ori-price">21.990.000đ</p>
+                                <p class="sale-price">18.620.000đ</p>
+                            </div>
+                            <div class="discount">-17%</div>
+                        </div>
+                    </div>
+                    <button class="add-button" onclick="showQuantityControl(this)">Add to Cart</button>
+                    <div class="quantity-control" style="display: none;">
+                        <button onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="show-more">
+            Show more <span class="arrow">&#9660;</span>
+        </button>
+    </div>
+
+    <div class="Promotion-section" id="Promotion-section">
+        <p class="section">Promotion</p>
+        <div class="product-listings">
+            <div class="product">
+                <div class="product-container">
+                    <img class="product-pic" src="product-picture/pic1.png" alt="Product Image">
+                    <div class="product-info">
+                        <p class="product-name">GAMING PC - RTX 4060 Pro Art - 12400F</p>
+                        <div class="price_discount">
+                            <div class="product-price">
+                                <p class="ori-price">21.990.000đ</p>
+                                <p class="sale-price">18.620.000đ</p>
+                            </div>
+                            <div class="discount">-17%</div>
+                        </div>
+                    </div>
+                    <button class="add-button" onclick="showQuantityControl(this)">Add to Cart</button>
+                    <div class="quantity-control" style="display: none;">
+                        <button onclick="decreaseQuantity(this)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="increaseQuantity(this)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="show-more">
+            Show more <span class="arrow">&#9660;</span>
+        </button>
+    </div>
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About us</h3>
+        <p>Official commercial page of Elon Musk - CEO. Always looking for products for customers.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact us</h3>
+        <p>VD 4, Thới Hòa, Bến Cát, Bình Dương 75000</p>
+        <p>0274 2220 990</p>
+        <p>awazonshop@gmail.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Transaction Service</a></li>
+          <li><a href="#">Take our feedback survey</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Shopping with us</h3>
+        <ul>
+          <li><a href="#">Making payments</a></li>
+          <li><a href="#">Delivery options</a></li>
+          <li><a href="#">Buyer options</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Awazon. All rights reserved.</p>
+    </div>
+  </footer>
+  <script></script>
+</body>
+</html>
